@@ -113,3 +113,5 @@ td { font-variant-numeric: tabular-nums; }
 .tag.probable { color: var(--probable); }
 .tag.lore { color: var(--lore); }
 .legend { font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif; font-size: 13px; color: var(--muted); margin: 4px 0 0; }
+.person img.face { height: 62px; width: auto; border: 1px solid var(--rule); border-radius: 4px; float: left; margin: 2px 12px 4px 0; }
+.person.hasface { max-width: 30em; }

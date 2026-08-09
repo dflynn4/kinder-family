@@ -96,3 +96,20 @@ table { border-collapse: collapse; width: 100%; font-size: 16px; }
 th, td { text-align: left; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
 th { font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif; font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
 td { font-variant-numeric: tabular-nums; }
+
+/* family tree */
+.tree { font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif; margin: 20px 0 10px; }
+.tree ul { list-style: none; margin: 0; padding-left: 26px; border-left: 2px solid var(--rule); }
+.tree > ul { border-left: none; padding-left: 0; }
+.tree li { position: relative; margin: 12px 0; }
+.tree ul li::before { content: ""; position: absolute; left: -26px; top: 26px; width: 20px; height: 2px; background: var(--rule); }
+.person { display: inline-block; background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 8px 13px; }
+.person.you { border-color: var(--accent); border-width: 2px; background: transparent; }
+.person .role { display: block; font-size: 10px; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); margin-bottom: 1px; }
+.person .nm { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; font-weight: 700; }
+.person .yr { color: var(--muted); font-size: 13px; white-space: nowrap; }
+.person .note { display: block; font-size: 13px; color: var(--muted); margin-top: 3px; max-width: 44ch; line-height: 1.45; }
+.tag { font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; border: 1px solid currentColor; border-radius: 3px; padding: 0 5px; vertical-align: 1px; }
+.tag.probable { color: var(--probable); }
+.tag.lore { color: var(--lore); }
+.legend { font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif; font-size: 13px; color: var(--muted); margin: 4px 0 0; }
